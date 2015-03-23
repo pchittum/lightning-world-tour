@@ -1,0 +1,27 @@
+<aura:component controller="ExpController" implements="flexipage:availableForAllPageTypes">
+ 
+    <!-- Attributes for Expense List -->
+    <aura:attribute name="expenses" type="List"/>
+    
+    <!-- Initialization event handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!--<aura:handler event="aura:doneWaiting" action="{!c.doInit}"/>-->
+   
+    <!-- Display Expense Data from Model -->
+    <div align="center">
+        <div class="row">
+		  <!-- Use the Apex model and controller to fetch server side data -->
+        <table class="mastertable">
+            <tr>
+                <td class="tablehead">Expense</td>
+                <td class="tablehead">Information</td>
+            </tr>
+            <aura:iteration items="{!v.expenses}" var="expense">
+               <c:ExpenseListEntry expense="{!expense}" />             
+	        </aura:iteration>
+        </table>
+        </div>
+    </div>
+    
+    
+</aura:component>

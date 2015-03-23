@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="expense" type="Expense__c"/>
+    <aura:registerEvent name="ExpenseSelectedEvent" type="c:ExpenseSelected"/>
+    <tr>
+        <td class="datacell"><a onclick="{!c.viewExpense}">{!v.expense.Name}</a></td>
+        <td class="datacell">
+            <ui:outputCurrency value="{!v.expense.Amount__c}"/>
+        </td>
+        <td class="datacell">
+            <ui:outputDate value="{!v.expense.Date__c}"/>
+        </td>
+    </tr>
+</aura:component>

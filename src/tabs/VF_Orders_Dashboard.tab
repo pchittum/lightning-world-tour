@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPage>VF_Orders_Dashboard</flexiPage>
+    <label>VF Orders Dashboard</label>
+    <mobileReady>true</mobileReady>
+    <motif>Custom7: Square</motif>
+</CustomTab>

@@ -1,0 +1,45 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+
+    <aura:handler event="c:ExpenseSelected" action="{!c.onExpenseSelectedEvent}"/>
+
+    <!-- Attribute for the card's Expense record -->
+    <aura:attribute name="expense" type="Expense__c" />
+    <aura:attribute name="id" type="String"/>
+    <aura:attribute name="id-link" type="String"/>
+    <aura:attribute name="expenseName" type="String"/>
+    <aura:attribute name="expenseAmount" type="Double"/>
+    <aura:attribute name="expenseClient" type="String"/>
+    <aura:attribute name="expenseDate" type="Date"/>
+    <aura:attribute name="expenseIsReimbursed" type="Boolean"/>
+    	
+        <div class="listRecord recordLayout">
+        
+ 		<aura:if isTrue="{!v.expenseName}">
+            <div class="itemTitle">
+                <a onclick="{!c.linkToRecord}"><ui:outputText value="{!v.expense.Name}"/></a>
+            </div>
+            <div class="hr"></div>
+            
+            <div class="recordItem"><span class="fieldName">Amount:</span>
+                <ui:outputCurrency value="{!v.expense.Amount__c}"/>
+            </div>
+            <div class="recordItem"><span class="fieldName">Client:</span>
+                <ui:outputText value="{!v.expense.Client__c}"/>
+            </div>
+            <div class="recordItem"><span class="fieldName">Date:</span>
+                <ui:outputDate value="{!v.expense.Date__c}"/>
+            </div>
+			<!-- TODO: Add funtionality for reimbursement -->
+            
+            <aura:set attribute="else">
+                <div class="itemTitle">
+                <ui:outputText value="No Expense Selected"/>
+                </div>
+            </aura:set>
+        </aura:if>
+            
+
+    </div>
+    
+    
+</aura:component>

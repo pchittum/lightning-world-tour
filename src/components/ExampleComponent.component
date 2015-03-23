@@ -1,0 +1,9 @@
+<apex:component controller="ComponentController">
+    <apex:attribute name="recId" assignTo="{!myId}" type="Id" description="Pass in an Id to get a value"/>
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:outputField value="{!exp.Name}"/>
+            <apex:outputField value="{!exp.Amount__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:component>

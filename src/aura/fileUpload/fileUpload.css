@@ -1,0 +1,38 @@
+.THIS .notUploading {
+    visibility: hidden;
+}
+ 
+.THIS .uploading {
+    visibility: visible;
+    display: inline-block;
+    margin: 5px;
+}
+ 
+.THIS .small-spinner {
+    height: 10px;
+    width: 10px;
+}
+
+.THIS .fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 14px;
+	padding: 14px;
+}
+
+.THIS .fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.THIS .file {
+    margin-bottom: 5px;
+    display: block;
+}

@@ -1,0 +1,54 @@
+.THIS .row {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.THIS.recordLayout {
+    list-style: none;
+    padding: 14px;
+    margin: 10px;
+    border-bottom:1px solid #cfd4d9;
+}
+.THIS.listRecord {
+    margin: 14px;
+    border-radius: 5px;
+    border: 1px solid #cfd4d9;
+    position: relative;
+    background:  #4dca76;
+}
+.THIS .uiOutputText {
+    line-height: 1.1em;
+}
+.THIS .itemTitle {
+    font-size: 20px;
+    padding-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+}
+.THIS a{
+    color:white;
+}
+.THIS .recordItem {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.THIS .recordItem .fieldName {
+    font-weight: bold;
+    color: white;
+    padding-right: 8px;
+}
+
+.THIS .hr {
+    color: white;
+    background: white; 
+    width: 100%; 
+    height: 1px;
+	margin-bottom: 6px;
+}

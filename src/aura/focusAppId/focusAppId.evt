@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event for setting a primary record id when an LAB App Works with a Record" >
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="type" type="String"/>
+</aura:event>

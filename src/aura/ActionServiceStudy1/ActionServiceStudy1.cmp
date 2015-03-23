@@ -1,0 +1,20 @@
+<aura:component controller="ExpController">
+
+    <aura:attribute name="expenses" type="Expense__c[]"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:iteration items="{!v.expenses}" var="exp">
+        <!--
+			next thing create a component...maybe parent, that I create object specific
+			children that enherit a save function
+		-->
+        <p>
+        	<div>{!exp.Id}</div>
+            <div>{!exp.Name}</div>
+	  		<div>{!exp.Amount__c}</div>
+	  		<div>{!exp.Reimbursed__c}</div>
+        </p>
+    </aura:iteration>
+    
+</aura:component>

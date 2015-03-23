@@ -1,0 +1,81 @@
+.THIS .row {
+
+    margin-bottom: 20px;
+    margin: 14px;
+    border-radius: 5px;
+    border: 1px solid #cfd4d9;
+	background-color: #ffffff;
+    padding: 14px;
+}
+
+.THIS tr.labAccountListEntry:nth-child(even) {
+	background-color: red;
+}
+
+.THIS .labAccountListEntry .datacell {
+	padding: 5px;
+}
+
+.THIS .tablehead {
+    font-size:24px;
+    color: #4dca76;
+	font-weight: bold;
+    padding-bottom: 12px;
+    
+}
+
+.THIS .mastertable {
+    
+    background-color: #ffffff;
+    padding: 6px;
+    width: 100%;
+}
+
+.THIS .alert {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 45%;
+    line-height: 25px;
+    text-align: center;
+}
+.THIS .alert-danger {
+    background-color: #900000;
+    border-color: #900000;
+    color: #ffffff;
+}
+.THIS .alert-success {
+    background-color:  #0a4a00;
+    border-color:  #0a4a00;
+    color: #ffffff;
+}
+.THIS .green {
+    background:  #0a4a00;
+}
+.THIS .red {
+    background: #900000;
+}
+.THIS .itemTitle {
+    font-size: 36px;
+    padding-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.THIS .summaryCell {
+    width: 25%;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #cfd4d9;
+}
+.THIS .summaryPanel {
+    list-style: none;
+    padding: 0px;
+    margin: 2px;
+    border: 1px solid #cfd4d9;
+    border-bottom:1px solid #cfd4d9;
+    border-radius: 5px;
+    width: 95%;
+    position: relative;
+}

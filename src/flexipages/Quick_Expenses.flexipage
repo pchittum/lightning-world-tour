@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>ExpenseCard</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>ExpenseItemList</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>saveButtonLabel</name>
+                <value>Save Attachment</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>uploadLabel</name>
+                <value>Upload File</value>
+            </componentInstanceProperties>
+            <componentName>fileUpload</componentName>
+        </componentInstances>
+        <name>main</name>
+    </flexiPageRegions>
+    <masterLabel>Quick Expenses</masterLabel>
+    <pageTemplate>flexipage:defaultAppHomeTemplate</pageTemplate>
+    <quickActionList>
+        <quickActionListItems>
+            <quickActionName>New_Expense</quickActionName>
+        </quickActionListItems>
+    </quickActionList>
+    <type>AppPage</type>
+</FlexiPage>

@@ -1,0 +1,25 @@
+<aura:component controller="FileController" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="parentId" type="Id"/>
+    <aura:attribute name="uploadLabel" type="String" default="Upload File"/>
+    <aura:attribute name="saveButtonLabel" type="String" default="Save Attachment"/>
+    
+    <!--<aura:handler event="aura:waiting" action="{!c.waiting}"/> -->
+    <!--<aura:handler event="aura:doneWaiting" action="{!c.doneWaiting}"/>-->
+    <aura:handler event="c:focusAppId" action="{!c.setFocus}"/>
+    
+    <div class="upload">
+        <div class="fileUpload uiBlock uiButton">
+            <span>{!v.uploadLabel}</span>
+        	<input type="file" class="upload" aura:id="file" multiple="" />
+        </div>
+        <ui:button label="{!v.saveButtonLabel}" press="{!c.save}"/>
+        
+        <!--<center><ui:spinner aura:id="spinner"/></center>-->
+        
+        <div aura:id="uploading" class="notUploading">
+            <center><ui:spinner aura:id="spinner" isVisible="false"/></center>
+    	</div>
+		
+    </div>
+    
+</aura:component>

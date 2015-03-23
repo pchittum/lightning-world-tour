@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Select an Expense">
+    <aura:attribute name="expense" type="Expense__c" />
+    <aura:attribute name="msg" type="String" />
+    
+</aura:event>

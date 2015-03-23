@@ -1,0 +1,6 @@
+<design:component>
+	<design:attribute name="chartLabel" label="Chart Label" description="Label for Chart"/>
+	<design:attribute name="chartColor" label="Color of Chart Item" description="Label for Chart"/>
+	<design:attribute name="chartUnitsThreshold" label="Threshold" description="Label for Chart"/>
+	<design:attribute name="sourceType" label="Source Type" description="Label for Chart"/>
+</design:component>
