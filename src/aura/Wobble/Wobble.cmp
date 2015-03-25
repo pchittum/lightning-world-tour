@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable" controller="Wobble">
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:handler event="aura:locationChange" action="{!c.changeLocation}"/>
+<aura:attribute name="doEvent" type="Integer"/>
+<aura:attribute name="doTiltLR" type="Integer"/>
+<aura:attribute name="doTiltFB" type="Integer"/>
+<aura:attribute name="doDirection" type="Integer"/>
+<aura:attribute name="wobbleId" type="String"/>
+<aura:attribute name="start" type="DateTime"/>
+<div class="main">
+  <h2>Device Orientation</h2>
+  <table>
+    <tr>
+      <td>Event Supported</td>
+      <td id="doEvent">{!v.doEvent}</td>
+    </tr>
+    <tr>
+      <td>Tilt Left/Right [gamma]</td>
+      <td id="doTiltLR">{!v.doTiltLR}</td>
+    </tr>
+    <tr>
+      <td>Tilt Front/Back [beta]</td>
+      <td id="doTiltFB">{!v.doTiltFB}</td>
+    </tr>
+    <tr>
+      <td>Direction [alpha]</td>
+      <td id="doDirection">{!v.doDirection}</td>
+    </tr>
+   </table>
+</div>
+
+<div class="container" style="perspective: 300;width: 100%">
+  <img aura:id="sflogo" style="{!'-webkit-transform:rotate(' +v.doTiltLR+ 'deg) rotate3d(1,0,0, ' +v.doTiltFB * -1+ 'deg); transform:rotate(' +v.doTiltLR+ 'deg) rotate3d(1,0,0, ' +v.doTiltFB * -1+ 'deg)'}" src="/resource/logo/" id="imgLogo" class="logo"/>
+</div>
+<ui:button press="{!c.changeLocation}" label="Stop Tracking"/>
+</aura:component>
