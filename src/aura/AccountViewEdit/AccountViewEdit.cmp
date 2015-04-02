@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable" controller="AccountViewEditService">
+
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+	<aura:attribute name="acctId" type="String"/>
+	<aura:attribute name="displayView" type="Boolean" default="true"/>
+
+	<aura:if isTrue="{!v.displayView}">
+		<force:recordView recordId="{!v.acctId}" aura:id="acctView" type="FULL"/>
+
+		<aura:set attribute="else">
+			<force:recordEdit recordId="{!v.acctId}" aura:id="acctEdit"/>
+		</aura:set>
+
+	</aura:if>
+</aura:component>

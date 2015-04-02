@@ -53,6 +53,8 @@
             showToast.fire();
             //c.doneWaiting(this);
         });
+
+        action.setExclusive();
             
         $A.run(function() {
             $A.enqueueAction(action); 

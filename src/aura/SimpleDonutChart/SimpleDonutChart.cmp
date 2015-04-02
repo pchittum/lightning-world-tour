@@ -1,6 +1,8 @@
 <aura:component implements="flexipage:availableForAllPageTypes" controller="DonutChartService">
+
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	<aura:handler name="change" value="{!v.chartValue}" action="{!c.redrawChart}"/>
+
 	<aura:attribute name="total" type="Integer" default="360"/>
 	<aura:attribute name="values" type="Object[]"/>
 	<aura:attribute name="chartValue" type="Integer" default="0"/>
@@ -8,10 +10,12 @@
 	<aura:attribute name="chartColor" type="String" default="#36adf6"/>
 	<aura:attribute name="chartUnitsThreshold" type="Integer" default="20"/>
 	<aura:attribute name="sourceType" type="String"/>
+
 	<div class="container">
 		<canvas aura:id="chart"	width="280" height="280"/>
 		<div class="chartLabel" >
 			<ui:outputText value="{!v.chartLabel}"/>
 		</div>
 	</div>
+	
 </aura:component>

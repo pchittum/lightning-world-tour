@@ -58,7 +58,7 @@
 					//doesn't appear to be called...must ask about this
 					measure.setCallback(this, function(a){
 						if (a.getState()==='SUCCESS'){
-							console.log('it worked!');
+							console.log('Added Motion Measurements!');
 						} else {
 							console.log('you failed!');
 						}

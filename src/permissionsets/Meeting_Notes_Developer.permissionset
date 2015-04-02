@@ -56,7 +56,7 @@
         <apexClass>Wobble</apexClass>
         <enabled>false</enabled>
     </classAccesses>
-    <description>Permission Set generated for access to custom object Expense for the app Expenses</description>
+    <description>Permission Set generated for access to custom object Note for the app Meeting Notes</description>
     <externalDataSourceAccesses>
         <enabled>false</enabled>
         <externalDataSource>OrderDB</externalDataSource>
@@ -246,7 +246,16 @@
         <field>Trip__c.Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
-    <label>Expenses Developer</label>
+    <label>Meeting Notes Developer</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Note__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <pageAccesses>
         <apexPage>ExamplePage</apexPage>
         <enabled>false</enabled>

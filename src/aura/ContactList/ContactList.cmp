@@ -7,14 +7,10 @@
     <ul>
         <aura:iteration items="{!v.contacts}" var="contact">
             <li >
-                <span>
+                <a href="{! '#/sObject/' + contact.Id + '/view'}">
                     <p>{!contact.Name}</p>
                     <p>{!contact.Phone}</p>
-                <!--<a href="{! '#/sObject/' + contact.Id + '/view'}">
-                    <p>{!contact.Name}</p>
-                    <p>{!contact.Phone}</p>
-                </a>-->
-                </span>
+                </a>
             </li>
         </aura:iteration>
     </ul>

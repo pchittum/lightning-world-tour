@@ -4,4 +4,5 @@
     <label>External Orders</label>
     <tab>Quickstart</tab>
     <tab>Orders__x</tab>
+    <tab>Wobble__c</tab>
 </CustomApplication>

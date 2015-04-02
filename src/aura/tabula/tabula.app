@@ -1,3 +1,3 @@
 <aura:application >
-    <c:ActionServiceStudy1 />
+    <c:AccountViewEdit />
 </aura:application>
