@@ -4,7 +4,6 @@
 	<aura:handler name="change" value="{!v.chartValue}" action="{!c.redrawChart}"/>
 
 	<aura:attribute name="total" type="Integer" default="360"/>
-	<aura:attribute name="values" type="Object[]"/>
 	<aura:attribute name="chartValue" type="Integer" default="0"/>
 	<aura:attribute name="chartLabel" type="String" default="This"/>
 	<aura:attribute name="chartColor" type="String" default="#36adf6"/>
